@@ -10,7 +10,7 @@ $(document).ready(function () {
   });
 
   //Get Current Time
-  var currentHour = new Date().getHours();
+  var currentHour = dayjs().hour();
 
   //Function to set background colors based on past, present, or future time blocks
   timeBlock.each(function() {
