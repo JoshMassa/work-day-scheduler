@@ -62,6 +62,32 @@ textarea {
   margin-bottom: 50px;
 }
 
+header {
+  background-color: rgb(143, 143, 255);
+}
+
+.lead {
+  color: rgb(3, 91, 91);
+}
+
+#currentDay {
+  color: #7a211d;
+  font-weight: 900;
+}
+
+body {
+  background-color:antiquewhite;
+  min-width: 320px;
+}
+
+.hour {
+  border-left: 1px dashed black;
+}
+
+#hour-17 .hour {
+  border-bottom: 1px dashed black;
+}
+
 @media screen and (max-width: 450px) {
   .time-block {
     margin-left: -40px;
@@ -73,7 +99,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 374px) {
   .time-block {
     margin-left: -40px;
     margin-right: -80px;
