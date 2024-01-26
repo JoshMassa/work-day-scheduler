@@ -1,99 +1,64 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# Work Day Scheduler
 
-## Your Task
+## Overview
+I created this work day scheduler as a way for a user to save past, present, and future tasks between the hours of 9am-5pm as a quick and easy way for the user to reference what tasks they should have already completed, be currently working on, or working on later in their work day.
 
-Create a simple calendar application that allows a user to save events for each hour of a typical working day (9am&ndash;5pm) by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Features
 
-You'll need to use the [Day.js](https://day.js.org/en/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+1. Responsive Design
 
-## User Story
+I designed my webpage to be fully responsive from the smallest mobile devices, to tablets, to the largest desktops to provide a consistent means to view my work day scheduler in an enjoyable and engaging experience.
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+2. Current Date & Time
 
-## Acceptance Criteria
+At the top left of the page, you will see the current date and time dynamically updated every second to provide the user a quick and easy way to view the current date and time in relation to their daily task list (work day scheduler).
 
-```md
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours of 9am&ndash;5pm
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+3. Color Coded Time Blocks
 
-The following animation demonstrates the application functionality:
+In the body of the webpage, you will see times ranging from 9am-5pm. These times will be color coded based on whether that time block is in the past, present, or future. A past time block will appear grey, a present time block will appear red, and a future time block will appear green.
 
-<!-- @TODO: create ticket to review/update image) -->
-![A user clicks on slots on the color-coded calendar and edits the events.](./assets/images/05-third-party-apis-homework-demo.gif)
+4. Saving tasks to localStorage
 
-## Grading Requirements
+Each time you enter a task into its respective time block and click on the save button located to the right of each time block, it will store your entered information to localStorage so you can view your saved tasks at a future time when refreshing or navigating back to the webpage.
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+5. Technologies Used
 
-This Challenge is graded based on the following criteria:
+* HTML5
+* CSS
+* JavaScript
+* Day.js
+* Bootstrap
+* jQuery
+* VSCode
+* GitBash
 
-### Technical Acceptance Criteria: 40%
+## Usage
+To view this webpage, please visit https://joshmassa.github.io/work-day-scheduler/
 
-* Satisfies all of the above acceptance criteria plus the following:
+To view this projects repository, please visit https://github.com/JoshMassa/work-day-scheduler
 
-  * Uses a date utility library to work with date and time
+When viewed from a desktop, the webpage should resemble the following image:
 
-### Deployment: 32%
+![Desktop View](./assets/images/desktop-view.png)
 
-* Application deployed at live URL
+When viewed from a tablet, the webpage should resemble the following image:
 
-* Application loads with no errors
+![Tablet View](./assets/images/tablet-view.png)
 
-* Application GitHub URL submitted
+When viewed from a mobile device, the webpage should resemble the following image:
 
-* GitHub repo contains application code
+![Mobile View](./assets/images/mobile-view.png)
 
-### Application Quality: 15%
+## Credits
+This project brought to you in part by UCLA Extension and its staff including but not limited to: Our class instructor and teaching assistant of UCLA Extension Coding Bootcamp 2023-2024.
 
-* Application user experience is intuitive and easy to navigate
+Links to resource references used as follows:
 
-* Application user interface style is clean and polished
+https://day.js.org/docs/en/display/format
 
-* Application resembles the mock-up functionality provided in the Challenge instructions
+https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
-### Repository Quality: 13%
+https://jquery.com/
 
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
-- - -
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## License
+This project does not contain a license.
