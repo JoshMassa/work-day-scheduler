@@ -38,7 +38,7 @@ $(document).ready(function () {
   function updateCurrentTime() {
     var currentDT = dayjs().format('dddd MMMM D, YYYY' + ' -' + ' hh:mm:ss a');
     $('#currentDay').text(currentDT);
-    setInterval(updateCurrentTime, 1000);
   }
+  setInterval(updateCurrentTime, 1000);
   updateCurrentTime();
 });
